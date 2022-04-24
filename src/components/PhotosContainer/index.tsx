@@ -1,5 +1,5 @@
-import React from 'react';
 import { IFlickrPhoto } from 'src/Models/flickrResponse';
+import React from 'react';
 import PhotoBox from '../PhotoBox';
 import classes from './style.module.scss';
 
