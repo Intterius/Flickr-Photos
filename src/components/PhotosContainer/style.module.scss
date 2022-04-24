@@ -1,0 +1,29 @@
+.images_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  .content {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media all and (min-width: 490px) {
+      width: 415px;
+    }
+
+    @media all and (min-width: 705px) {
+      width: 630px;
+    }
+
+    @media all and (min-width: 920px) {
+      width: 845px;
+    }
+
+    @media all and (min-width: 1135px) {
+      width: 1060px;
+    }
+  }
+}
