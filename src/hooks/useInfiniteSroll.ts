@@ -30,5 +30,9 @@ export const useInfiniteScroll = (queryText: string) => {
     };
   }, [availablePages, currentPage, scrollHandler]);
 
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [queryText]);
+
   return { fetchedData, isLoading, errorMessage };
 };

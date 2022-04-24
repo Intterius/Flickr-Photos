@@ -1,6 +1,6 @@
+import { ChangeEvent } from 'react';
 import classes from './style.module.scss';
 import searchIcon from 'src/assets/icons/search-icon.svg';
-import { ChangeEvent } from 'react';
 
 interface IProps {
   queryText: string;
