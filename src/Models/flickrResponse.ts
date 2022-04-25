@@ -1,9 +1,12 @@
 export interface IFlickrResponse {
-  page: number;
-  pages: number;
-  perpage: number;
-  photo: IFlickrPhoto[];
-  total: number;
+  stat: string;
+  photos: {
+    page: number;
+    pages: number;
+    perpage: number;
+    photo: IFlickrPhoto[];
+    total: number;
+  };
 }
 
 export interface IFlickrPhoto {

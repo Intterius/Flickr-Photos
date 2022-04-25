@@ -1,3 +1,4 @@
+import { AxiosResponse } from 'axios';
 import { checkEmptySpaces } from './../utils/checkEmptySpaces';
 import { IFlickrPhoto, IFlickrResponse } from './../Models/flickrResponse';
 import { useEffect, useState, useCallback } from 'react';
@@ -17,10 +18,7 @@ export const useDebounce = (searchText: string, page: number) => {
         data: {
           photos: { photo, pages },
         },
-      }: { data: { photos: IFlickrResponse } } = await http.get(
-        searchText,
-        page
-      );
+      }: AxiosResponse<IFlickrResponse> = await http.get(searchText, page);
 
       photo.length === 0
         ? setErrorMessage(
